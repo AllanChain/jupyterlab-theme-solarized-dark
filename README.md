@@ -1,6 +1,6 @@
 # jupyterlab-theme-solarized-dark
 
-JupyterLab 2 Solarized Dark extension.
+JupyterLab 2.x Solarized Dark extension.
 
 ## Prerequisites
 
