@@ -1,6 +1,6 @@
-# theme-solarized-dark
+# jupyterlab-theme-solarized-dark
 
-JupyterLab Solarized Dark extension.
+JupyterLab 2 Solarized Dark extension.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ JupyterLab Solarized Dark extension.
 ## Installation
 
 ```bash
-jupyter labextension install theme-solarized-dark
+jupyter labextension install jupyterlab-theme-solarized-dark
 ```
 
 ## Development
