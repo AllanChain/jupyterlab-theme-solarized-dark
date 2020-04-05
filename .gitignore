@@ -28,6 +28,7 @@ __pycache__
 .DS_Store
 \#*#
 .#*
+tsconfig.tsbuildinfo
 
 *.swp
 *.map
