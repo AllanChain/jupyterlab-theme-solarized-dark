@@ -59,10 +59,10 @@
   },
   "homepage": "",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark/issues"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark"
   }
 }
