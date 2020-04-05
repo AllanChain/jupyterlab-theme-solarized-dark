@@ -1,6 +1,12 @@
 # jupyterlab-theme-solarized-dark
 
+[![NPM](https://nodei.co/npm/jupyterlab-theme-solarized-dark.png)](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
+
 JupyterLab 2.x Solarized Dark extension.
+
+Originally created by [Jae Hee Lee](http://jaeheelee.info/) at <https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb>
+
+I just created this JupyterLab extension, and also fixed icon color issue on JupyterLab 2.x
 
 ## Prerequisites
 
