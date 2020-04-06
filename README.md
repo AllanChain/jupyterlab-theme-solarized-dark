@@ -18,6 +18,8 @@ I just created this JupyterLab extension, and also fixed icon color issue on Jup
 jupyter labextension install jupyterlab-theme-solarized-dark
 ```
 
+To enable theme scrollbar, in JupyterLab, navigate to `Settings -> Advanced Settings Editor -> Theme`, and add `"theme-scrollbars": true` to `User Preferences`
+
 ## Development
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
