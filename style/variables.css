@@ -112,10 +112,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--solarized-base0);
-  --jp-border-color1: var(--solarized-base1);
-  --jp-border-color2: var(--solarized-base2);
-  --jp-border-color3: var(--solarized-base3);
+  --jp-border-color0: var(--solarized-base02);
+  --jp-border-color1: var(--solarized-base01);
+  --jp-border-color2: var(--solarized-base01);
+  --jp-border-color3: var(--solarized-base00);
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -142,11 +142,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * In a light theme, these go from dark to light.
    */
 
-  /* Defaults use Material Design specification */
-  --jp-ui-font-color0: var(--solarized-base00);
-  --jp-ui-font-color1: var(--solarized-base0);
-  --jp-ui-font-color2: var(--solarized-base1);
-  --jp-ui-font-color3: var(--solarized-base2);
+  --jp-ui-font-color0: var(--solarized-base0);
+  --jp-ui-font-color1: var(--solarized-base1);
+  --jp-ui-font-color2: var(--solarized-base2);
+  /* Disabled item */
+  --jp-ui-font-color3: var(--solarized-base01);
 
   /*
    * Use these against the brand/accent/warn/error colors.
@@ -185,10 +185,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: var(--solarized-base1);
-  --jp-content-font-color1: var(--solarized-base0);
-  --jp-content-font-color2: var(--solarized-base00);
-  --jp-content-font-color3: var(--solarized-base01);
+  --jp-content-font-color0: var(--solarized-base2);
+  --jp-content-font-color1: var(--solarized-base1);
+  --jp-content-font-color2: var(--solarized-base0);
+  --jp-content-font-color3: var(--solarized-base00);
 
   --jp-content-link-color: var(--solarized-blue);
 
