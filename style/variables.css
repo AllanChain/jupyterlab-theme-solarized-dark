@@ -31,6 +31,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --solarized-base03: #002b36;
   --solarized-base02: #073642;
+  --solarized-base015: #1b444f;
   --solarized-base01: #586e75;
   --solarized-base00: #657b83;
 
@@ -112,8 +113,8 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--solarized-base02);
-  --jp-border-color1: var(--solarized-base01);
+  --jp-border-color0: var(--solarized-base015);
+  --jp-border-color1: var(--solarized-base015);
   --jp-border-color2: var(--solarized-base01);
   --jp-border-color3: var(--solarized-base00);
   --jp-border-radius: 2px;
@@ -225,7 +226,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color0: var(--solarized-base03);
   --jp-layout-color1: var(--solarized-base03);
   --jp-layout-color2: var(--solarized-base02);
-  --jp-layout-color3: var(--solarized-base01);
+  --jp-layout-color3: var(--solarized-base015);
   --jp-layout-color4: var(--solarized-base00);
 
   /* Inverse Layout
