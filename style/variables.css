@@ -27,10 +27,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 :root {
 
   /* Create the solarized dark palette.
-  The bases run in increasing brightness. */
+   * The bases run in increasing brightness.
+   */
 
   --solarized-base03: #002b36;
   --solarized-base02: #073642;
+  /* Non-standard color between base02 and base01.
+   * Because base01 and base02 are so different.
+   * Note base015 is not exactly at the half. It's just a name.
+   */
   --solarized-base015: #1b444f;
   --solarized-base01: #586e75;
   --solarized-base00: #657b83;
@@ -225,6 +230,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-layout-color0: var(--solarized-base03);
   --jp-layout-color1: var(--solarized-base03);
+  /* Note the separator of menu items uses --jp-layout-color2 */
   --jp-layout-color2: var(--solarized-base02);
   --jp-layout-color3: var(--solarized-base015);
   --jp-layout-color4: var(--solarized-base00);
@@ -387,7 +393,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Vega extension styles */
 
-  /* --jp-vega-background: var(--md-grey-400); */
   --jp-vega-background: var(--solarized-base0);
 
   /* Sidebar-related styles */
