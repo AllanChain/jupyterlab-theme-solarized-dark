@@ -8,9 +8,17 @@ Originally created by [Jae Hee Lee](http://jaeheelee.info/) at <https://gist.git
 
 I just created this JupyterLab extension, and also fixed icon color issue on JupyterLab 2.x
 
+## Screenshot
+
+![](https://user-images.githubusercontent.com/36528777/78555603-fbbd9580-783f-11ea-8955-b22019b2d1f6.png)
+
 ## Prerequisites
 
 * JupyterLab
+
+## Version
+
+Version `0.2.x` is mainly based on Jae Hee Lee's original theme. And Version `1.x` is currently under development, which aims to provide a smoother looking.
 
 ## Installation
 
