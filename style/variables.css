@@ -148,9 +148,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    * In a light theme, these go from dark to light.
    */
 
-  --jp-ui-font-color0: var(--solarized-base0);
+  --jp-ui-font-color0: var(--solarized-base1);
   --jp-ui-font-color1: var(--solarized-base1);
-  --jp-ui-font-color2: var(--solarized-base2);
+  --jp-ui-font-color2: var(--solarized-base00);
   /* Disabled item */
   --jp-ui-font-color3: var(--solarized-base01);
 
