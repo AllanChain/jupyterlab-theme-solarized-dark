@@ -57,7 +57,7 @@
     "extension": true,
     "themePath": "style/index.css"
   },
-  "homepage": "",
+  "homepage": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark",
   "bugs": {
     "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark/issues"
   },
