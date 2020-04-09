@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-theme-solarized-dark",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-rc.0",
   "description": "JupyterLab 2.x Solarized Dark extension.",
   "contributors": [
     "Jae Hee Lee (http://jaeheelee.info/)",
