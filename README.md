@@ -28,6 +28,18 @@ jupyter labextension install jupyterlab-theme-solarized-dark
 
 To enable theme scrollbar, in JupyterLab, navigate to `Settings -> Advanced Settings Editor -> Theme`, and add `"theme-scrollbars": true` to `User Preferences`
 
+## Customization
+
+Although Jupyterlab provides a setting for user to override css, there are only 3 css variables available.
+
+Some hack is required to provide a `local.css`. And I don't think such hack is what a theme should do.
+
+You can directly edit `<share>/jupyter/lab/themes/jupyterlab-theme-solarized-dark/index.css` to modify the theme locally. `<share>` directory locates differently depending on the OS. Note that all the change will be lost when upgrading the theme.
+
+Or fork the repo and install your own theme.
+
+And, feel free to create issues and PRs!
+
 ## Development
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
