@@ -15,3 +15,8 @@ pre {
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
+
+/* Disable code mirror text-shadow when searching for readability */
+.cm-searching {
+  text-shadow: none;
+}
