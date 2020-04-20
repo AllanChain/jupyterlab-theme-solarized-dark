@@ -45,6 +45,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --solarized-base2: #eee8d5;
   --solarized-base3: #fdf6e3;
 
+  --solarized-yellow: #b58900;
   --solarized-orange: #cb4b16;
   --solarized-red: #dc322f;
   --solarized-magenta: #d33682;
@@ -190,7 +191,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-margin-bottom: 0.8em;
   --jp-content-heading-font-weight: 500;
 
-  /* Defaults use Material Design specification */
   --jp-content-font-color0: var(--solarized-base2);
   --jp-content-font-color1: var(--solarized-base1);
   --jp-content-font-color2: var(--solarized-base0);
@@ -342,7 +342,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-layout-color0);
+  --jp-toolbar-border-color: var(--jp-layout-color3);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color0);
   --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
@@ -402,11 +402,11 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.6;
-  --jp-search-toggle-hover-opacity: 0.8;
+  --jp-search-toggle-off-opacity: 0.4;
+  --jp-search-toggle-hover-opacity: 0.7;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(255, 225, 0);
-  --jp-search-selected-match-color: black;
+  --jp-search-selected-match-background-color: var(--solarized-yellow);
+  --jp-search-selected-match-color: var(--solarized-base02);
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
