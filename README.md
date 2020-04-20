@@ -10,7 +10,7 @@ I just created this JupyterLab extension, and also fixed icon color issue on Jup
 
 ## Screenshot
 
-![](https://user-images.githubusercontent.com/36528777/78555603-fbbd9580-783f-11ea-8955-b22019b2d1f6.png)
+![Screenshot](https://user-images.githubusercontent.com/36528777/79721723-6927f680-8315-11ea-8a5b-e2c298eeed09.png)
 
 ## Prerequisites
 
