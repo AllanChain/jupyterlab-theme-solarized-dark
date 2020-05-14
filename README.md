@@ -1,6 +1,11 @@
 # jupyterlab-theme-solarized-dark
 
-[![NPM](https://nodei.co/npm/jupyterlab-theme-solarized-dark.png)](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
+
+[![NPM Version](https://img.shields.io/npm/v/jupyterlab-theme-solarized-dark.svg)](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
+![Monthly Downloads](https://img.shields.io/npm/dm/jupyterlab-theme-solarized-dark.svg)
+![License](https://img.shields.io/npm/l/jupyterlab-theme-solarized-dark.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/AllanChain/jupyterlab-theme-solarized-dark)
+![GitHub stars](https://img.shields.io/github/stars/AllanChain/jupyterlab-theme-solarized-dark)
 
 JupyterLab 2.x Solarized Dark extension.
 
