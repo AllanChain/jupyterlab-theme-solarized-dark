@@ -4,9 +4,7 @@
 
 JupyterLab 2.x Solarized Dark extension.
 
-Originally created by [Jae Hee Lee](http://jaeheelee.info/) at <https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb>
-
-I just created this JupyterLab extension, and also fixed icon color issue on JupyterLab 2.x
+The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb)
 
 ## Screenshot
 
@@ -18,7 +16,7 @@ I just created this JupyterLab extension, and also fixed icon color issue on Jup
 
 ## Version
 
-Version `0.2.x` is mainly based on Jae Hee Lee's original theme. And Version `1.x` is currently under development, which aims to provide a smoother looking.
+Version `0.2.x` is mainly based on Jae Hee Lee's original theme. And Version `1.x` aims to provide a smoother looking.
 
 ## Installation
 
@@ -26,7 +24,12 @@ Version `0.2.x` is mainly based on Jae Hee Lee's original theme. And Version `1.
 jupyter labextension install jupyterlab-theme-solarized-dark
 ```
 
-To enable theme scrollbar, in JupyterLab, navigate to `Settings -> Advanced Settings Editor -> Theme`, and add `"theme-scrollbars": true` to `User Preferences`
+Apply theme by checking `Settings -> Jupyterlab Theme -> Jupyterlab Solarized Dark`
+
+To enable theme scrollbars, in JupyterLab, either
+
+- navigate to `Settings -> Advanced Settings Editor -> Theme`, and add `"theme-scrollbars": true` to `User Preferences`
+- OR check `Settings -> Jupyterlab Theme -> Theme Scrollbars`
 
 ## Customization
 
