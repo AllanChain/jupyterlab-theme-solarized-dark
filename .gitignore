@@ -50,3 +50,7 @@ lerna-debug.log
 yarn-error.log
 
 junit.xml
+
+package-lock.json
+yarn.lock
+jupyterlab-theme-solarized-dark-*.tgz
