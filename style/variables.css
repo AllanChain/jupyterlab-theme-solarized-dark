@@ -160,10 +160,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: var(--solarized-base01);
-  --jp-ui-inverse-font-color1: var(--solarized-base00);
-  --jp-ui-inverse-font-color2: var(--solarized-base0);
-  --jp-ui-inverse-font-color3: var(--solarized-base1);
+  --jp-ui-inverse-font-color0: var(--solarized-base03);
+  --jp-ui-inverse-font-color1: var(--solarized-base02);
+  --jp-ui-inverse-font-color2: var(--solarized-base015);
+  --jp-ui-inverse-font-color3: var(--solarized-base015);
 
   /* Content Fonts
    *
