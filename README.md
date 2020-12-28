@@ -1,12 +1,15 @@
 # jupyterlab-theme-solarized-dark
 
 ![Github Actions Status](https://github.com/AllanChain/jupyterlab-theme-solarized-dark/workflows/Build/badge.svg)
+![License](https://img.shields.io/github/license/AllanChain/jupyterlab-theme-solarized-dark.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AllanChain/jupyterlab-theme-solarized-dark)
 ![GitHub stars](https://img.shields.io/github/stars/AllanChain/jupyterlab-theme-solarized-dark)
 
 [![NPM Version](https://img.shields.io/npm/v/jupyterlab-theme-solarized-dark.svg)](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
-![Monthly Downloads](https://img.shields.io/npm/dm/jupyterlab-theme-solarized-dark.svg)
-![License](https://img.shields.io/npm/l/jupyterlab-theme-solarized-dark.svg)
+![Monthly Downloads](https://img.shields.io/npm/dm/jupyterlab-theme-solarized-dark.svg?label=npm%20downloads)
+
+[![PyPI](https://img.shields.io/pypi/v/jupyterlab_theme_solarized_dark)](https://pypi.org/project/jupyterlab-theme-solarized-dark/)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/jupyterlab_theme_solarized_dark?label=pypi%20downloads)
 
 JupyterLab 3.x Solarized Dark extension.
 
@@ -22,16 +25,26 @@ The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](
 
 ## Version
 
-`v0.2.x` is mainly based on Jae Hee Lee's original theme. And `v1.x` aims to provide a smoother looking. Starting from `v2.x`, Jupyterlab `3.x` support is added.
+- `v0.2.x` is mainly based on Jae Hee Lee's original theme
+- `v1.x` aims to provide a smoother looking.
+- Starting from `v2.x`, Jupyterlab `v3.x` support is added.
 
 ## Requirements
 
-* JupyterLab >= 3.0
+* JupyterLab >= 2.0 or JupyterLab >= 3.0
 
 ## Install
 
+To install it as a prebuilt extension (requires JupyterLab >= 3.0):
+
 ```bash
 pip install jupyterlab_theme_solarized_dark
+```
+
+Or install it as a source extension:
+
+```bash
+jupyter labextension install jupyterlab-theme-solarized-dark
 ```
 
 Apply theme by checking `Settings -> Jupyterlab Theme -> Jupyterlab Solarized Dark`
@@ -83,4 +96,10 @@ jupyter lab build --minimize=False
 
 ```bash
 pip uninstall jupyterlab_theme_solarized_dark
+```
+
+Or
+
+```bash
+jupyter labextension uninstall jupyterlab-theme-solarized-dark
 ```
