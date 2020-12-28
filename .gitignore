@@ -8,6 +8,7 @@ jupyterlab_theme_solarized_dark/labextension
 
 .vscode/
 debug.log
+yarn-error.log
 _temp_extension
 
 # Created by https://www.gitignore.io/api/python
