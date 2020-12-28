@@ -6,6 +6,10 @@ node_modules/
 *.tsbuildinfo
 jupyterlab_theme_solarized_dark/labextension
 
+.vscode/
+debug.log
+_temp_extension
+
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
 
