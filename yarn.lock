@@ -90,7 +90,7 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.1.tgz#ccfef6ddbe59f8fe8f694783e1d3eb88902dc5eb"
   integrity sha512-OEdH7SyC1suTdhBGW91/zBfR6qaIhThbcN8PUXtXilY4GYnSBbVqOntdHbC1vXwsDnX0Qix2m2+DSU1J51ybOQ==
 
-"@jupyterlab/application@^3.0.0":
+"@jupyterlab/application@^2.0.0 || ^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@jupyterlab/application/-/application-3.0.0.tgz#791dacd18c6353333a675d9f6ca457c7da3216b6"
   integrity sha512-5ZkrGHjEaFLV5bbG/IqKqqVUp+KphlYxXoR820rcnd2gSm3+xfwsVbXJbAqadJaso2P+UEobMzqkOjyz4FrotQ==
@@ -116,7 +116,7 @@
     "@lumino/signaling" "^1.4.3"
     "@lumino/widgets" "^1.16.1"
 
-"@jupyterlab/apputils@^3.0.0":
+"@jupyterlab/apputils@^2.0.0 || ^3.0.0", "@jupyterlab/apputils@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@jupyterlab/apputils/-/apputils-3.0.0.tgz#cce6f77064239df4d0ed71754ba67423fced7621"
   integrity sha512-C3lx4VfkF0Rihhjql95nxOBlJknnJC4ge6VZ15dPuBHidBOAQ8gGj3cOPDJMvSzi/n7ibFtdnNdsGFEBYtz/8Q==
