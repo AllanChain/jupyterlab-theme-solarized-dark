@@ -11,16 +11,14 @@
     "noEmitOnError": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
-    "outDir": "lib",
     "preserveWatchOutput": true,
     "resolveJsonModule": true,
+    "outDir": "lib",
     "rootDir": "src",
-    "sourceMap": true,
     "strict": true,
+    "strictNullChecks": false,
     "target": "es2017",
     "types": []
   },
-  "include": [
-    "src/*"
-  ]
+  "include": ["src/*"]
 }
