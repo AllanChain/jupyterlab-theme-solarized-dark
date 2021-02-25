@@ -11,7 +11,7 @@
 [![PyPI](https://img.shields.io/pypi/v/jupyterlab_theme_solarized_dark)](https://pypi.org/project/jupyterlab-theme-solarized-dark/)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/jupyterlab_theme_solarized_dark?label=pypi%20downloads)
 
-JupyterLab 3.x Solarized Dark extension.
+JupyterLab 2.x / 3.x Solarized Dark extension.
 
 The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb)
 
