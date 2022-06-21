@@ -20,3 +20,7 @@ pre {
 .cm-searching {
   text-shadow: none;
 }
+
+.jp-RenderedText.jp-OutputArea-output[data-mime-type="application/vnd.jupyter.stderr"] pre{
+  color: var(--solarized-base2);
+}
