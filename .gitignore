@@ -1,15 +1,16 @@
 *.bundle.*
 lib/
 node_modules/
+.eslintcache
+.stylelintcache
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
 jupyterlab_theme_solarized_dark/labextension
 
-.vscode/
-debug.log
-yarn-error.log
-_temp_extension
+# Integration tests
+ui-tests/test-results/
+ui-tests/playwright-report/
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
