@@ -13,7 +13,7 @@
 
 JupyterLab 2.x / 3.x Solarized Dark extension.
 
-The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb)
+The theme is originally created by [Jae Hee Lee](https://github.com/dschaehi) in this [gist](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb)
 
 ## Screenshot
 
