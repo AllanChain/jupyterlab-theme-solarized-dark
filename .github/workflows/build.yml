@@ -2,9 +2,11 @@ name: Build
 
 on:
   push:
-    branches: main
+    branches:
+    - main
   pull_request:
-    branches: '*'
+    branches: 
+    - '*'
 
 jobs:
   build:
@@ -44,11 +46,15 @@ jobs:
         python -m build
         pip uninstall -y "jupyterlab_theme_solarized_dark" jupyterlab
 
+        npm pack --pack-destination dist
+
     - name: Upload extension packages
       uses: actions/upload-artifact@v2
       with:
         name: extension-artifacts
-        path: dist/jupyterlab_theme_solarized_dark*
+        path: |
+          dist/jupyterlab_theme_solarized_dark*
+          dist/jupyterlab-theme-solarized-dark*
         if-no-files-found: error
 
   test_isolated:
@@ -75,6 +81,32 @@ jobs:
 
         pip install "jupyterlab~=3.1" jupyterlab_theme_solarized_dark*.whl
 
+
+        jupyter labextension list
+        jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
+        python -m jupyterlab.browser_check --no-chrome-test
+  
+  test_v2:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+        architecture: 'x64'
+    - uses: actions/download-artifact@v2
+      with:
+        name: extension-artifacts
+    - name: Install and Test
+      run: |
+        set -eux
+
+        pip install "jupyterlab~=2.0"
+        jupyter labextension install jupyterlab-theme-solarized-dark*.tar.gz
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
