@@ -46,7 +46,8 @@ jobs:
         python -m build
         pip uninstall -y "jupyterlab_theme_solarized_dark" jupyterlab
 
-        npm pack --pack-destination dist
+        npm pack
+        mv jupyterlab-theme-solarized-dark* dist
 
     - name: Upload extension packages
       uses: actions/upload-artifact@v2
@@ -106,7 +107,7 @@ jobs:
         set -eux
 
         pip install "jupyterlab~=2.0"
-        jupyter labextension install jupyterlab-theme-solarized-dark*.tar.gz
+        jupyter labextension install jupyterlab-theme-solarized-dark*.tgz
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
