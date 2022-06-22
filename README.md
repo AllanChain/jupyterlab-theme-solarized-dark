@@ -21,7 +21,7 @@ The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](
 
 ## Prerequisites
 
-* JupyterLab
+- JupyterLab
 
 ## Version
 
@@ -31,7 +31,7 @@ The theme is originally created by [Jae Hee Lee](http://jaeheelee.info/) [here](
 
 ## Requirements
 
-* JupyterLab >= 2.0 or JupyterLab >= 3.0
+- JupyterLab >= 2.0 or JupyterLab >= 3.0
 
 ## Install
 
