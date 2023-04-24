@@ -12,7 +12,14 @@ packaging instructions in the `pyproject.toml` file to wrap your extension in a
 Python package. Before generating a package, we first need to install `build`.
 
 ```bash
-pip install build twine
+pip install build twine hatch
+```
+
+Bump the version using `hatch`. By default this will create a tag.
+See the docs on [hatch-nodejs-version](https://github.com/agoose77/hatch-nodejs-version#semver) for details.
+
+```bash
+hatch version <new-version>
 ```
 
 To create a Python source package (`.tar.gz`) and the binary package (`.whl`) in the `dist/` directory, do:

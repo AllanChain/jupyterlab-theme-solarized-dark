@@ -14,13 +14,13 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Base Setup
       uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
 
     - name: Install dependencies
-      run: python -m pip install -U jupyterlab~=3.1 check-manifest
+      run: python -m pip install -U jupyterlab~=3.1
 
     - name: Lint the extension
       run: |
@@ -40,7 +40,6 @@ jobs:
     - name: Package the extension
       run: |
         set -eux
-        check-manifest -v
 
         pip install build
         python -m build
@@ -50,7 +49,7 @@ jobs:
         mv jupyterlab-theme-solarized-dark* dist
 
     - name: Upload extension packages
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: extension-artifacts
         path: |
@@ -64,13 +63,13 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Install Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
         architecture: 'x64'
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: extension-artifacts
     - name: Install and Test
@@ -112,3 +111,12 @@ jobs:
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
         python -m jupyterlab.browser_check --no-chrome-test
+
+  check_links:
+    name: Check Links
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - uses: jupyterlab/maintainer-tools/.github/actions/check-links@v1
