@@ -85,7 +85,8 @@
     "typescript": "~4.1.3"
   },
   "sideEffects": [
-    "style/*.css"],
+    "style/*.css"
+  ],
   "publishConfig": {
     "access": "public"
   },
