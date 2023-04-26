@@ -3,7 +3,14 @@
   "version": "2.1.0",
   "description": "JupyterLab 2/3 Solarized Dark extension.",
   "contributors": [
-    "Jae Hee Lee (https://github.com/dschaehi)"
+    {
+      "name": "Jae Hee Lee",
+      "url": "https://github.com/dschaehi"
+    },
+    {
+      "name": "Joses W. Ho",
+      "url": "https://github.com/josesho"
+    }
   ],
   "keywords": [
     "jupyter",
