@@ -14,7 +14,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension jupyterlab-theme-solarized-dark is activated!');
+    console.log(
+      'JupyterLab extension jupyterlab-theme-solarized-dark is activated!'
+    );
     const style = 'jupyterlab-theme-solarized-dark/index.css';
 
     manager.register({
