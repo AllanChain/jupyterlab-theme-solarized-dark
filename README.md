@@ -11,19 +11,11 @@
 [![PyPI](https://img.shields.io/pypi/v/jupyterlab_theme_solarized_dark)](https://pypi.org/project/jupyterlab-theme-solarized-dark/)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/jupyterlab_theme_solarized_dark?label=pypi%20downloads)
 
-JupyterLab 2.x / 3.x Solarized Dark extension.
-
 The theme is originally created by [Joses W. Ho](https://github.com/josesho) and [Jae Hee Lee](https://github.com/dschaehi) in this [gist](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb)
 
 ## Screenshot
 
 ![Screenshot](https://user-images.githubusercontent.com/36528777/79721723-6927f680-8315-11ea-8a5b-e2c298eeed09.png)
-
-## Version
-
-- `v0.2.x` is mainly based on Jae Hee Lee's original theme
-- `v1.x` aims to provide a smoother looking.
-- Starting from `v2.x`, Jupyterlab `v3.x` support is added.
 
 ## Requirements
 
