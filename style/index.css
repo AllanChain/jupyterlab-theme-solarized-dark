@@ -1,1 +1,23 @@
-@import './base.css';
+@import './variables.css';
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+ 
+/* Disable code mirror text-shadow when searching for readability */
+.cm-searching {
+  text-shadow: none;
+}
+ 
+/* stylelint-disable-next-line selector-class-pattern */
+.jp-RenderedText.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  pre {
+  color: var(--solarized-base2);
+}

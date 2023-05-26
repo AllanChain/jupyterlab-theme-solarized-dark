@@ -10,6 +10,7 @@ node_modules/
 jupyterlab_theme_solarized_dark/labextension
 # Version file is handled by hatchling
 jupyterlab_theme_solarized_dark/_version.py
+
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
 
@@ -115,3 +116,6 @@ dmypy.json
 
 # OSX files
 .DS_Store
+
+# Yarn cache
+.yarn/

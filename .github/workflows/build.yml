@@ -2,11 +2,9 @@ name: Build
 
 on:
   push:
-    branches:
-    - main
+    branches: main
   pull_request:
-    branches: 
-    - '*'
+    branches: '*'
 
 jobs:
   build:
@@ -20,7 +18,7 @@ jobs:
       uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
 
     - name: Install dependencies
-      run: python -m pip install -U jupyterlab~=3.1
+      run: python -m pip install -U "jupyterlab>=4.0.0,<5"
 
     - name: Lint the extension
       run: |
@@ -45,16 +43,11 @@ jobs:
         python -m build
         pip uninstall -y "jupyterlab_theme_solarized_dark" jupyterlab
 
-        npm pack
-        mv jupyterlab-theme-solarized-dark* dist
-
     - name: Upload extension packages
       uses: actions/upload-artifact@v3
       with:
         name: extension-artifacts
-        path: |
-          dist/jupyterlab_theme_solarized_dark*
-          dist/jupyterlab-theme-solarized-dark*
+        path: dist/jupyterlab_theme_solarized_dark*
         if-no-files-found: error
 
   test_isolated:
@@ -79,38 +72,13 @@ jobs:
         sudo rm -rf $(which node)
         sudo rm -rf $(which node)
 
-        pip install "jupyterlab~=3.1" jupyterlab_theme_solarized_dark*.whl
+        pip install "jupyterlab>=4.0.0,<5" jupyterlab_theme_solarized_dark*.whl
 
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
-        python -m jupyterlab.browser_check --no-chrome-test
-  
-  test_v2:
-    needs: build
-    runs-on: ubuntu-latest
+        python -m jupyterlab.browser_check --no-browser-test
 
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Install Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'
-        architecture: 'x64'
-    - uses: actions/download-artifact@v2
-      with:
-        name: extension-artifacts
-    - name: Install and Test
-      run: |
-        set -eux
-
-        pip install "jupyterlab~=2.0"
-        jupyter labextension install jupyterlab-theme-solarized-dark*.tgz
-
-        jupyter labextension list
-        jupyter labextension list 2>&1 | grep -ie "jupyterlab-theme-solarized-dark.*OK"
-        python -m jupyterlab.browser_check --no-chrome-test
 
   check_links:
     name: Check Links

@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.0.5
+_src_path: gh:jupyterlab/extension-template
+author_email: allan-chain@outllok.com
+author_name: Allan Chain
+data_format: string
+file_extension: ''
+has_binder: false
+has_settings: false
+kind: theme
+labextension_name: jupyterlab-theme-solarized-dark
+mimetype: ''
+mimetype_name: ''
+project_short_description: Solarized dark theme for JupyterLab.
+python_name: jupyterlab_theme_solarized_dark
+repository: https://github.com/AllanChain/jupyterlab-theme-solarized-dark
+test: false
+viewer_name: ''
+
