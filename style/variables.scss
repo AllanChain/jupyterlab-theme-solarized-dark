@@ -27,10 +27,11 @@ all of MD as it is not optimized for dense, information rich UIs.
 /* Create the solarized dark palette.
  * The bases run in increasing brightness.
  */
-@use "sass:color";
+@use 'sass:color';
 
 $solarized-base03: #002b36;
 $solarized-base02: #073642;
+
 // $solarized-base015: #1b444f;
 $solarized-base01: #586e75;
 $solarized-base00: #657b83;
@@ -46,7 +47,6 @@ $solarized-violet: #6c71c4;
 $solarized-blue: #268bd2;
 $solarized-cyan: #2aa198;
 $solarized-green: #859900;
-
 $solarized-base015: color.mix($solarized-base02, $solarized-base01, 80%);
 $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
 
@@ -276,11 +276,13 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--jp-layout-color0);
-
   --jp-cell-editor-border-color: #{$solarized-base015};
   --jp-cell-editor-background: var(--jp-layout-color1);
-  --jp-cell-editor-active-background: #{color.mix($solarized-base03, $solarized-base02, 70%)};
+  --jp-cell-editor-active-background: #{color.mix(
+      $solarized-base03,
+      $solarized-base02,
+      70%
+    )};
   --jp-cell-editor-active-border-color: var(--jp-input-active-border-color);
   --jp-cell-prompt-width: 64px;
   --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
@@ -350,7 +352,11 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--jp-layout-color3);
   --jp-input-border-color: var(--jp-border-color1);
-  --jp-input-active-border-color: #{color.mix($solarized-blue, $solarized-base03, 80%)};
+  --jp-input-active-border-color: #{color.mix(
+      $solarized-blue,
+      $solarized-base03,
+      80%
+    )};
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
