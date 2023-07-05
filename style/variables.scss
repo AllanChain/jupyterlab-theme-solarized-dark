@@ -117,8 +117,8 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-border-width: 1px;
   --jp-border-color0: #{$solarized-base015};
   --jp-border-color1: #{$solarized-base015};
-  --jp-border-color2: #{$solarized-base01};
-  --jp-border-color3: #{$solarized-base00};
+  --jp-border-color2: #{color.mix($solarized-base02, $solarized-base01, 50%)};
+  --jp-border-color3: #{$solarized-base01};
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -353,7 +353,7 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--jp-layout-color3);
-  --jp-input-border-color: var(--jp-border-color1);
+  --jp-input-border-color: var(--jp-border-color2);
   --jp-input-active-border-color: #{color.mix(
       $solarized-blue,
       $solarized-base03,
