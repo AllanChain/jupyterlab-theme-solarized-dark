@@ -38,8 +38,8 @@
     "url": "https://github.com/AllanChain/jupyterlab-theme-solarized-dark.git"
   },
   "scripts": {
-    "build": "jlpm build sass && jlpm build:lib && jlpm build:labextension:dev",
-    "build:prod": "jlpm clean && jlpm build sass && jlpm build:lib:prod && jlpm build:labextension",
+    "build": "jlpm build:sass && jlpm build:lib && jlpm build:labextension:dev",
+    "build:prod": "jlpm clean && jlpm build:sass && jlpm build:lib:prod && jlpm build:labextension",
     "build:sass": "sass style/index.scss lib/index.css",
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
