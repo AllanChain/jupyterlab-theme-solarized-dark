@@ -313,10 +313,12 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   pixel so that no scrollbar appears if we have just one single-line cell in the
   notebook. This padding is to enable a 'scroll past end' feature in a notebook.
   */
+  /* stylelint-disable scss/operator-no-newline-after */
   --jp-notebook-scroll-padding: calc(
     100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
       var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
+  /* stylelint-enable scss/operator-no-newline-after */
 
   /* Rendermime styles */
 
