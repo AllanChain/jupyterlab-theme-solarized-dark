@@ -289,15 +289,9 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 1;
-
-  /* --jp-cell-prompt-not-active-font-color: var(--md-grey-300); */
-
-  /* --jp-cell-inprompt-font-color: var(--md-grey-50); */
-
-  /* --jp-cell-outprompt-font-color: var(--md-grey-50); */
   --jp-cell-prompt-not-active-font-color: #{$solarized-base0};
-  --jp-cell-inprompt-font-color: #{$solarized-base0};
-  --jp-cell-outprompt-font-color: #{$solarized-base0};
+  --jp-cell-inprompt-font-color: #{$solarized-blue};
+  --jp-cell-outprompt-font-color: #{$solarized-orange};
 
   /* Notebook specific styles */
 
