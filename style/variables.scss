@@ -382,7 +382,11 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-mirror-editor-bracket-color: #997;
   --jp-mirror-editor-tag-color: #{$solarized-green};
   --jp-mirror-editor-attribute-color: #{$solarized-blue};
-  --jp-mirror-editor-header-color: #{color.mix($solarized-blue, $solarized-base2, 90%)};
+  --jp-mirror-editor-header-color: #{color.mix(
+      $solarized-blue,
+      $solarized-base2,
+      90%
+    )};
   --jp-mirror-editor-quote-color: #{$solarized-cyan};
   --jp-mirror-editor-link-color: #{$solarized-blue};
   --jp-mirror-editor-error-color: #{$solarized-red};
