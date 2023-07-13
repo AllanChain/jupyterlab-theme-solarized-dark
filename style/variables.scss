@@ -243,32 +243,31 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   /* Brand/accent */
 
   --jp-brand-color0: #{$solarized-blue};
-  --jp-brand-color1: #{$solarized-blue};
-  --jp-brand-color2: var(--md-blue-300);
-  --jp-brand-color3: var(--md-blue-100);
+  --jp-brand-color1: #{color.mix($solarized-blue, $solarized-base02, 80%)};
+  --jp-brand-color2: #{color.mix($solarized-blue, $solarized-base02, 60%)};
+  --jp-brand-color3: #{color.mix($solarized-blue, $solarized-base02, 40%)};
   --jp-accent-color0: #{$solarized-green};
-  --jp-accent-color1: #{$solarized-green};
-  --jp-accent-color2: var(--md-green-300);
-  --jp-accent-color3: var(--md-green-100);
+  --jp-accent-color1: #{color.mix($solarized-green, $solarized-base02, 80%)};
+  --jp-accent-color2: #{color.mix($solarized-green, $solarized-base02, 60%)};
+  --jp-accent-color3: #{color.mix($solarized-green, $solarized-base02, 40%)};
 
   /* State colors (warn, error, success, info) */
-
   --jp-warn-color0: #{$solarized-orange};
-  --jp-warn-color1: #{$solarized-orange};
-  --jp-warn-color2: var(--md-orange-300);
-  --jp-warn-color3: var(--md-orange-100);
+  --jp-warn-color1: #{color.mix($solarized-orange, $solarized-base02, 80%)};
+  --jp-warn-color2: #{color.mix($solarized-orange, $solarized-base02, 60%)};
+  --jp-warn-color3: #{color.mix($solarized-orange, $solarized-base02, 40%)};
   --jp-error-color0: #{$solarized-red};
-  --jp-error-color1: #{$solarized-red};
-  --jp-error-color2: var(--md-red-300);
-  --jp-error-color3: var(--md-red-100);
+  --jp-error-color1: #{color.mix($solarized-red, $solarized-base02, 80%)};
+  --jp-error-color2: #{color.mix($solarized-red, $solarized-base02, 60%)};
+  --jp-error-color3: #{color.mix($solarized-red, $solarized-base02, 40%)};
   --jp-success-color0: #{$solarized-green};
-  --jp-success-color1: #{$solarized-green};
-  --jp-success-color2: var(--md-green-300);
-  --jp-success-color3: var(--md-green-100);
+  --jp-success-color1: #{color.mix($solarized-green, $solarized-base02, 80%)};
+  --jp-success-color2: #{color.mix($solarized-green, $solarized-base02, 60%)};
+  --jp-success-color3: #{color.mix($solarized-green, $solarized-base02, 40%)};
   --jp-info-color0: #{$solarized-cyan};
-  --jp-info-color1: #{$solarized-cyan};
-  --jp-info-color2: var(--md-cyan-300);
-  --jp-info-color3: var(--md-cyan-100);
+  --jp-info-color1: #{color.mix($solarized-cyan, $solarized-base02, 80%)};
+  --jp-info-color2: #{color.mix($solarized-cyan, $solarized-base02, 60%)};
+  --jp-info-color3: #{color.mix($solarized-cyan, $solarized-base02, 40%)};
 
   /* Cell specific styles */
 
@@ -406,7 +405,7 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
 
   --jp-jupyter-icon-color: var(--md-orange-900);
   --jp-notebook-icon-color: var(--md-orange-700);
-  --jp-json-icon-color: var(--md-orange-700);
+  --jp-json-icon-color: #{$solarized-orange};
   --jp-console-icon-background-color: #{$solarized-blue};
   --jp-console-icon-color: #{$solarized-base3};
   --jp-terminal-icon-background-color: var(--jp-inverse-layout-color2);
@@ -455,13 +454,13 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-icon-contrast-color3: #{$solarized-blue};
 
   /* Button colors */
-  --jp-accept-color-normal: var(--md-blue-700);
-  --jp-accept-color-hover: var(--md-blue-800);
-  --jp-accept-color-active: var(--md-blue-900);
-  --jp-warn-color-normal: var(--md-red-700);
-  --jp-warn-color-hover: var(--md-red-800);
-  --jp-warn-color-active: var(--md-red-900);
-  --jp-reject-color-normal: var(--md-grey-600);
-  --jp-reject-color-hover: var(--md-grey-700);
-  --jp-reject-color-active: var(--md-grey-800);
+  --jp-accept-color-normal: #{$solarized-blue};
+  --jp-accept-color-hover: #{color.mix($solarized-blue, $solarized-base02, 80%)};
+  --jp-accept-color-active: #{color.mix($solarized-blue, $solarized-base02, 60%)};
+  --jp-warn-color-normal: #{$solarized-red};
+  --jp-warn-color-hover: #{color.mix($solarized-red, $solarized-base02, 80%)};
+  --jp-warn-color-active: #{color.mix($solarized-red, $solarized-base02, 60%)};
+  --jp-reject-color-normal: #{$solarized-base0};
+  --jp-reject-color-hover: #{$solarized-base01};
+  --jp-reject-color-active: #{color.mix($solarized-base01, $solarized-base02, 70%)};
 }
