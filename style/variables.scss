@@ -235,8 +235,8 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
    */
 
   --jp-inverse-layout-color0: #{$solarized-base3};
-  --jp-inverse-layout-color1: #{$solarized-base3};
-  --jp-inverse-layout-color2: #{$solarized-base2};
+  --jp-inverse-layout-color1: #{$solarized-base2};
+  --jp-inverse-layout-color2: #{color.mix($solarized-base2, $solarized-base1, 50%)};
   --jp-inverse-layout-color3: #{$solarized-base1};
   --jp-inverse-layout-color4: #{$solarized-base0};
 
@@ -407,14 +407,14 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-jupyter-icon-color: var(--md-orange-900);
   --jp-notebook-icon-color: var(--md-orange-700);
   --jp-json-icon-color: var(--md-orange-700);
-  --jp-console-icon-background-color: var(--md-blue-700);
-  --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-200);
-  --jp-terminal-icon-color: var(--md-grey-800);
-  --jp-text-editor-icon-color: var(--md-grey-200);
-  --jp-inspector-icon-color: var(--md-grey-200);
-  --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-700);
+  --jp-console-icon-background-color: #{$solarized-blue};
+  --jp-console-icon-color: #{$solarized-base3};
+  --jp-terminal-icon-background-color: var(--jp-inverse-layout-color2);
+  --jp-terminal-icon-color: #{$solarized-base02};
+  --jp-text-editor-icon-color: #{$solarized-base2};
+  --jp-inspector-icon-color: #{$solarized-base2};
+  --jp-switch-color: #{$solarized-base1};
+  --jp-switch-true-position-color: #{$solarized-green};
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
   /* Vega extension styles */
@@ -449,10 +449,10 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
-  --jp-icon-contrast-color0: var(--md-purple-600);
-  --jp-icon-contrast-color1: var(--md-green-600);
-  --jp-icon-contrast-color2: var(--md-pink-600);
-  --jp-icon-contrast-color3: var(--md-blue-600);
+  --jp-icon-contrast-color0: #{$solarized-violet};
+  --jp-icon-contrast-color1: #{$solarized-green};
+  --jp-icon-contrast-color2: #{$solarized-magenta};
+  --jp-icon-contrast-color3: #{$solarized-blue};
 
   /* Button colors */
   --jp-accept-color-normal: var(--md-blue-700);
