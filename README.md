@@ -5,11 +5,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/AllanChain/jupyterlab-theme-solarized-dark)
 ![GitHub stars](https://img.shields.io/github/stars/AllanChain/jupyterlab-theme-solarized-dark)
 
-[![NPM Version](https://img.shields.io/npm/v/jupyterlab-theme-solarized-dark.svg)](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
-![Monthly Downloads](https://img.shields.io/npm/dm/jupyterlab-theme-solarized-dark.svg?label=npm%20downloads)
+[![NPM Version](https://img.shields.io/npm/v/jupyterlab-theme-solarized-dark.svg?logo=npm&label=npm%20(deprecated))](https://npmjs.org/package/jupyterlab-theme-solarized-dark)
+![Monthly Downloads](https://img.shields.io/npm/dm/jupyterlab-theme-solarized-dark.svg?logo=npm&label=npm%20downloads)
 
-[![PyPI](https://img.shields.io/pypi/v/jupyterlab_theme_solarized_dark)](https://pypi.org/project/jupyterlab-theme-solarized-dark/)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/jupyterlab_theme_solarized_dark?label=pypi%20downloads)
+[![PyPI](https://img.shields.io/pypi/v/jupyterlab_theme_solarized_dark?logo=pypi&label=PyPi)](https://pypi.org/project/jupyterlab-theme-solarized-dark/)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/jupyterlab_theme_solarized_dark?logo=pypi&label=PyPi%20downloads)
 
 The theme was originally created by [Joses W. Ho](https://github.com/josesho) and [Jae Hee Lee](https://github.com/dschaehi) in this [gist](https://gist.github.com/dschaehi/ff6d30e6779a683053a1f078af178cdb).
 
