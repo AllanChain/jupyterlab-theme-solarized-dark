@@ -236,7 +236,11 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
 
   --jp-inverse-layout-color0: #{$solarized-base3};
   --jp-inverse-layout-color1: #{$solarized-base2};
-  --jp-inverse-layout-color2: #{color.mix($solarized-base2, $solarized-base1, 50%)};
+  --jp-inverse-layout-color2: #{color.mix(
+      $solarized-base2,
+      $solarized-base1,
+      50%
+    )};
   --jp-inverse-layout-color3: #{$solarized-base1};
   --jp-inverse-layout-color4: #{$solarized-base0};
 
@@ -462,5 +466,9 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-warn-color-active: #{color.mix($solarized-red, $solarized-base02, 60%)};
   --jp-reject-color-normal: #{$solarized-base0};
   --jp-reject-color-hover: #{$solarized-base01};
-  --jp-reject-color-active: #{color.mix($solarized-base01, $solarized-base02, 70%)};
+  --jp-reject-color-active: #{color.mix(
+      $solarized-base01,
+      $solarized-base02,
+      70%
+    )};
 }
