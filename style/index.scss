@@ -1,4 +1,4 @@
-@use './variables.scss';
+@use './variables.scss' as c;
 
 /* Set the default typography for monospace elements */
 tt,
@@ -19,5 +19,5 @@ pre {
 /* stylelint-disable-next-line selector-class-pattern */
 .jp-RenderedText.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
   pre {
-  color: var(--solarized-base2);
+  color: #{c.$solarized-base2};
 }
