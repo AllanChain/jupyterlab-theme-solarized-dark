@@ -44,7 +44,7 @@ jobs:
         pip uninstall -y "jupyterlab_theme_solarized_dark" jupyterlab
 
     - name: Upload extension packages
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.4.0
       with:
         name: extension-artifacts
         path: dist/jupyterlab_theme_solarized_dark*
@@ -62,7 +62,7 @@ jobs:
       with:
         python-version: '3.9'
         architecture: 'x64'
-    - uses: actions/download-artifact@v3
+    - uses: actions/download-artifact@v4.1.7
       with:
         name: extension-artifacts
     - name: Install and Test
