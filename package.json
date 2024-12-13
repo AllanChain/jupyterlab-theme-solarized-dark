@@ -51,7 +51,7 @@
         "clean:labextension": "rimraf jupyterlab_theme_solarized_dark/labextension jupyterlab_theme_solarized_dark/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
-        "eslint:check": "eslint . --cache --ext .ts,.tsx",
+        "eslint:check": "eslint . --cache",
         "install:extension": "jlpm build",
         "lint": "jlpm stylelint && jlpm prettier && jlpm eslint",
         "lint:check": "jlpm stylelint:check && jlpm prettier:check && jlpm eslint:check",
@@ -70,29 +70,27 @@
         "@jupyterlab/apputils": "^4.0.0"
     },
     "devDependencies": {
+        "@eslint/js": "^9.16.0",
         "@jupyterlab/builder": "^4.0.0",
         "@types/json-schema": "^7.0.11",
         "@types/react": "^18.0.26",
-        "@typescript-eslint/eslint-plugin": "^5.55.0",
-        "@typescript-eslint/parser": "^5.55.0",
-        "css-loader": "^6.7.1",
-        "eslint": "^8.36.0",
-        "eslint-config-prettier": "^8.7.0",
-        "eslint-plugin-prettier": "^4.2.1",
+        "css-loader": "^7.1.2",
+        "eslint": "^9.16.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
         "npm-run-all": "^4.1.5",
-        "prettier": "^2.8.7",
-        "rimraf": "^4.4.1",
-        "sass": "^1.63.6",
-        "source-map-loader": "^1.0.2",
-        "style-loader": "^3.3.1",
-        "stylelint": "^15.10.1",
-        "stylelint-config-prettier": "^9.0.4",
-        "stylelint-config-recommended": "^8.0.0",
-        "stylelint-config-standard": "^26.0.0",
-        "stylelint-config-standard-scss": "^10.0.0",
-        "stylelint-prettier": "^2.0.0",
-        "typescript": "~5.0.2",
-        "yjs": "^13.5.0"
+        "prettier": "^3.4.2",
+        "rimraf": "^6.0.1",
+        "sass": "^1.83.0",
+        "source-map-loader": "^5.0.0",
+        "style-loader": "^4.0.0",
+        "stylelint": "^16.11.0",
+        "stylelint-config-recommended": "^14.0.1",
+        "stylelint-config-standard": "^36.0.1",
+        "stylelint-config-standard-scss": "^14.0.0",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.18.0",
+        "yjs": "^13.6.20"
     },
     "sideEffects": [
         "style/*.css"
@@ -105,66 +103,6 @@
         "outputDir": "jupyterlab_theme_solarized_dark/labextension",
         "themePath": "lib/index.css"
     },
-    "eslintIgnore": [
-        "node_modules",
-        "dist",
-        "coverage",
-        "**/*.d.ts"
-    ],
-    "eslintConfig": {
-        "extends": [
-            "eslint:recommended",
-            "plugin:@typescript-eslint/eslint-recommended",
-            "plugin:@typescript-eslint/recommended",
-            "plugin:prettier/recommended"
-        ],
-        "parser": "@typescript-eslint/parser",
-        "parserOptions": {
-            "project": "tsconfig.json",
-            "sourceType": "module"
-        },
-        "plugins": [
-            "@typescript-eslint"
-        ],
-        "rules": {
-            "@typescript-eslint/naming-convention": [
-                "error",
-                {
-                    "selector": "interface",
-                    "format": [
-                        "PascalCase"
-                    ],
-                    "custom": {
-                        "regex": "^I[A-Z]",
-                        "match": true
-                    }
-                }
-            ],
-            "@typescript-eslint/no-unused-vars": [
-                "warn",
-                {
-                    "args": "none"
-                }
-            ],
-            "@typescript-eslint/no-explicit-any": "off",
-            "@typescript-eslint/no-namespace": "off",
-            "@typescript-eslint/no-use-before-define": "off",
-            "@typescript-eslint/quotes": [
-                "error",
-                "single",
-                {
-                    "avoidEscape": true,
-                    "allowTemplateLiterals": false
-                }
-            ],
-            "curly": [
-                "error",
-                "all"
-            ],
-            "eqeqeq": "error",
-            "prefer-arrow-callback": "error"
-        }
-    },
     "prettier": {
         "singleQuote": true,
         "trailingComma": "none",
@@ -174,8 +112,7 @@
     "stylelint": {
         "extends": [
             "stylelint-config-recommended",
-            "stylelint-config-standard-scss",
-            "stylelint-prettier/recommended"
+            "stylelint-config-standard-scss"
         ],
         "rules": {
             "property-no-vendor-prefix": null,
@@ -184,5 +121,6 @@
             "alpha-value-notation": null,
             "color-function-notation": null
         }
-    }
+    },
+    "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
