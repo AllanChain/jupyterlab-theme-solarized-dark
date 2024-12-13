@@ -312,8 +312,11 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   */
   /* stylelint-disable scss/operator-no-newline-after */
   --jp-notebook-scroll-padding: calc(
-    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-      var(--jp-code-padding) - var(--jp-cell-padding) - 1px
+    100% - var(--jp-code-font-size) *
+      var(--jp-code-line-height) - var(--jp-code-padding) - var(
+        --jp-cell-padding
+      ) -
+      1px
   );
   /* stylelint-enable scss/operator-no-newline-after */
 
@@ -460,7 +463,11 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   /* Button colors */
   --jp-accept-color-normal: #{$solarized-blue};
   --jp-accept-color-hover: #{color.mix($solarized-blue, $solarized-base02, 80%)};
-  --jp-accept-color-active: #{color.mix($solarized-blue, $solarized-base02, 60%)};
+  --jp-accept-color-active: #{color.mix(
+      $solarized-blue,
+      $solarized-base02,
+      60%
+    )};
   --jp-warn-color-normal: #{$solarized-red};
   --jp-warn-color-hover: #{color.mix($solarized-red, $solarized-base02, 80%)};
   --jp-warn-color-active: #{color.mix($solarized-red, $solarized-base02, 60%)};
