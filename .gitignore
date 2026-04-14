@@ -15,6 +15,9 @@ jupyterlab_theme_solarized_dark/_version.py
 # Edit at https://www.gitignore.io/?templates=python
 
 ### Python ###
+# Virtual environments
+.venv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

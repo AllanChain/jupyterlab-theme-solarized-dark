@@ -1,8 +1,9 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v4.0.7
+_commit: v4.5.2
 _src_path: gh:jupyterlab/extension-template
 author_email: allan-chain@outllok.com
 author_name: Allan Chain
+has_ai_rules: false
 has_binder: false
 has_settings: false
 kind: theme
