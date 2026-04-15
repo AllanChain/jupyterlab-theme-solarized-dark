@@ -10,7 +10,8 @@ export default tseslint.config(
       'dist/',
       '**/labextension/',
       'coverage/',
-      '**/*.d.ts'
+      '**/*.d.ts',
+      '.venv/'
     ]
   },
   eslint.configs.recommended,
