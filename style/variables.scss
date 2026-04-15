@@ -62,19 +62,19 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
    * colors used in the theme as well. */
   --jp-shadow-base-lightness: 32;
-  --jp-shadow-umbra-color: rgba(
+  --jp-shadow-umbra-color: rgb(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
     0.2
   );
-  --jp-shadow-penumbra-color: rgba(
+  --jp-shadow-penumbra-color: rgb(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
     0.14
   );
-  --jp-shadow-ambient-color: rgba(
+  --jp-shadow-ambient-color: rgb(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -324,12 +324,12 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
 
   --jp-rendermime-error-background: #dc322f38;
   --jp-rendermime-table-row-background: var(--jp-layout-color2);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-table-row-hover-background: rgb(3, 169, 244, 0.2);
 
   /* Dialog specific styles */
 
   /* Dialog overlay background color */
-  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+  --jp-dialog-background: rgb(0, 0, 0, 0.6);
 
   /* Console specific styles */
 
@@ -340,7 +340,7 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-toolbar-border-color: var(--jp-layout-color3);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color0);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgb(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
   --jp-toolbar-active-background: var(--jp-layout-color0);
 
@@ -359,12 +359,12 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
       $solarized-base03,
       80%
     )};
-  --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
+  --jp-input-active-box-shadow-color: rgb(19, 124, 189, 0.3);
 
   /* General editor styles */
 
   --jp-editor-selected-background: var(--jp-layout-color0);
-  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
+  --jp-editor-selected-focused-background: rgb(33, 150, 243, 0.24);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
@@ -421,7 +421,7 @@ $solarized-base025: color.mix($solarized-base03, $solarized-base02, 50%);
   --jp-inspector-icon-color: #{$solarized-base2};
   --jp-switch-color: #{$solarized-base1};
   --jp-switch-true-position-color: #{$solarized-green};
-  --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
+  --jp-switch-cursor-color: rgb(0, 0, 0, 0.8);
 
   /* Vega extension styles */
 
